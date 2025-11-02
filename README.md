@@ -113,20 +113,7 @@ Our web dashboard, built using **Node js**, provides:
 
 ---
 
-## 📈 Future Enhancements
-- 🔌 **Integration with EMG Sensors:**  
-  To detect muscle stiffness and confirm seizure or stroke activity with higher accuracy.
 
-- 🧬 **Alzheimer’s Detection:**  
-  Implementing AI models to analyze long-term EEG patterns for early detection of neurodegenerative diseases.
-
-- 🎮 **Gamified Cognitive Dashboard:**  
-  Introducing a focus-based scoring system and streak tracker to motivate users and enhance mental performance through gamification.
-
-
-
-
-
----
 
 > “Making neurological monitoring affordable, accessible, and intelligent — for every mind that matters.”
+
