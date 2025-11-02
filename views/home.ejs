@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Neuro Nexus | EEG Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a2e0d6c1a7.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="home.css" />
+</head>
+<body>
+<!-- Loading Animation -->
+<div class="loader">
+  <div class="loader-logo"><span>NEURO NEXUS</span></div>
+  <div class="loader-bar">
+    <div class="loader-progress"></div>
+  </div>
+</div>
+
+<!-- Main Container -->
+<div class="container">
+  <header>
+    <div class="logo">
+      <i class="fas fa-brain"></i>
+      <span>NEURO NEXUS</span>
+    </div>
+    <nav>
+      <a href="#" class="nav-link active" data-page="dashboard">DASHBOARD</a>
+      <a href="/about" class="nav-link" data-page="about">ABOUT</a>
+    </nav>
+  
+  </header>
+
+  <!-- Dashboard Page -->
+  <div class="page active" id="dashboard">
+    <div class="main-content">
+
+      <!-- State Display -->
+      <div class="section state-display">
+        <div class="state-icon" id="stateIcon">
+          <i class="fas fa-brain"></i>
+        </div>
+        <h1 id="state" class="state">FOCUSED</h1>
+      </div>
+
+      <!-- Neural Activity -->
+      <div class="section wave-section">
+        <div class="section-title">
+          <i class="fas fa-wave-square"></i>
+          <span>Neural Activity</span>
+        </div>
+        <div class="wave">
+          
+          <canvas id="waveCanvas"></canvas>
+        </div>
+      </div>
+
+      <!-- Metrics -->
+      <div class="section metrics-section">
+        <div class="section-title">
+          <i class="fas fa-chart-line"></i>
+          <span>Metrics</span>
+        </div>
+        <div class="metrics">
+          <div class="metric">
+            <div class="metric-label">
+              <i class="fas fa-bullseye" style="color:#00ccff;"></i>
+              <span>FOCUS</span>
+            </div>
+            <div class="metric-value" id="focus">80</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">
+              <i class="fas fa-bolt" style="color:#ff4d4d;"></i>
+              <span>STRESS</span>
+            </div>
+            <div class="metric-value" id="stress">20</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">
+              <i class="fas fa-heart" style="color:#00ff88;"></i>
+              <span>WELLBEING</span>
+            </div>
+            <div class="metric-value" id="wellbeing">95</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Brain Wave Bars -->
+      <div class="section brain-section">
+        <div class="section-title">
+          <i class="fas fa-brain"></i>
+          <span>Brain Wave Frequencies</span>
+        </div>
+        <div class="bar-container" id="brainBars"></div>
+      </div>
+
+      <!-- Simulation Controls -->
+      <div class="control-section">
+        <div class="section-title">
+          <i class="fas fa-play-circle"></i>
+          <span>Simulation Controls</span>
+        </div>
+        <div class="buttons">
+          <button id="startBtn" class="control-btn start">
+            <i class="fas fa-play"></i> Start Simulation
+          </button>
+          <button id="stopBtn" class="control-btn stop">
+            <i class="fas fa-stop"></i> Stop Simulation
+          </button>
+        </div>
+      </div>
+
+      <!-- Results -->
+      <div class="section result-section">
+        <div class="section-title">
+          <i class="fas fa-file-medical-alt"></i>
+          <span>Results</span>
+        </div>
+        <div id="result" class="result-box">
+          <p>Simulation not started yet...</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="home.js"></script>
+
+</body>
+</html>
